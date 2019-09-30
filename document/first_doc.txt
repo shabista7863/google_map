@@ -1,0 +1,25 @@
+	Registration page
+
+Please have a look on this form and go through step by step which is about a registration form divided in two 
+sections. You can see easily the functionalities which is happening through some fine data regarding a laravel 
+framework.
+
+1.create registration page in php using laravel framework
+2.create controller
+3.use session
+4.use database
+5.using validation
+6.insert a data name
+7.insert a data email
+8.insert a data phone no
+9.insert a data password
+
+
+    Login Page
+
+login in email ands password.
+
+    Logout Password
+
+using session in logout page
+		

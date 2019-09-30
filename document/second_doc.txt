@@ -1,0 +1,30 @@
+		Uploaded video
+
+insert a data video_type
+insert a data video_name
+insert a data price
+insert a data uploaded _video
+
+		 Profile view Uploaded video page
+
+view the uploaded page fetch data in database using login purpose.
+view the s.no
+view the video_type
+view the video_name
+view the video_price
+view the video_url
+
+  update Rgistration page
+
+update databases in registration page
+update name
+upgate email
+update phone no
+update password.
+
+   Delete Registration page
+delete registration page in database using id
+
+
+
+
