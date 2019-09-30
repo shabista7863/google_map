@@ -57,3 +57,6 @@ Route::get('storage/{filename}', function ($filename)
 });
 
 //Route::get('/userForgs', 'PaypalController@createProfile');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
