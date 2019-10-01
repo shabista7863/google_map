@@ -41,7 +41,8 @@
 
 <ul class="loginlist">
 <li><a href="{{url('reg/video_list')}}"  class="btn btncls text-white" >Video List</a></li>
-<li><a href="{{url('videoInsert')}}"  class="btn btncls text-white" >Home</a></li>
+<!-- <li><a href="{{url('videoInsert')}}"  class="btn btncls text-white" >Home</a></li>  -->
+<li><a href="{{url('')}}"  class="btn btncls text-white" >Home</a></li>   
 </ul>
 
 

@@ -75,20 +75,23 @@
 				<td>{{$usr->video_url}} </td>
 				<td>{{$usr->price}} </td>
 				<td>
+				
             <a type="button" class="btn btn-sm btn-info" href="{{url('userVideos')}}">Update
             </a>
             <a type="button" class="btn btn-sm btn-danger" href="{{url('reg/video_list')}}">Delete
             </a>
         </td> 
 			</tr>
+			
 			@endforeach
 			
 		</tr>
         </td>
+		
 		</tbody>
 	</table>
 </div>
-
+{!! $users->render() !!}
 
 </body>
 </html>

@@ -150,8 +150,8 @@ class VideosController extends Controller
             $users = DB::table('user_registers')             
             ->leftJoin('video_uploaded' , 'video_uploaded.users_id', '=', 'user_registers.id')
             ->select('user_registers.name', 'user_registers.email', 'user_registers.phone_no', 'video_uploaded.video_type', 'video_uploaded.video_url', 'video_uploaded.price')
-             ->where('video_uploaded.users_id', '=', Session::get('id'))
-            ->get();
+             ->where('video_uploaded.users_id', '=', Session::get('id'))->paginate(2)
+            ;
            // dd($users);
             return view('reg/video_list',compact('users', $users));
             

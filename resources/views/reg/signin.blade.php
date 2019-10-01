@@ -61,10 +61,10 @@
 
 
   <div class="form-group">
-  <label for="exampleInputEmail1">Email</label>
+  <!-- <label for="exampleInputEmail1">Email</label>
   <input type="name" class="form-control {{ $errors->has('email') ? 'has-error' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" placeholder="Enter email" value=""><br><br>
   <!-- @if ($errors->has('email')) -->
-      <span class="text-danger">{{ $errors->first('name') }}</span>
+      <span class="text-danger">{{ $errors->first('name') }}</span> -->
    <!-- @endif -->
   <label for="exampleInputEmail1">Email</label>
   <input type="email" class="form-control {{ $errors->has('email') ? 'has-error' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email" value=""><br><br>
