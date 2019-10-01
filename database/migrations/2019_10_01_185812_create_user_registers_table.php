@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFirst1Table extends Migration
+class CreateUserRegistersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateFirst1Table extends Migration
      */
     public function up()
     {
-        Schema::create('first1', function (Blueprint $table) {
+        Schema::create('user_registers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigIncrements('paypal');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone_no');
+            $table->string('password');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateFirst1Table extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('first1');
+        Schema::dropIfExists('user_registers');
     }
 }
