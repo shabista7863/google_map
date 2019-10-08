@@ -71,7 +71,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="text" class="form-control {{ $errors->has('Password') ? 'has-error' : '' }}" value="" id="exampleInputPassword1" name="password" placeholder="Enter password"><br><br>
+    <input type="password" class="form-control {{ $errors->has('Password') ? 'has-error' : '' }}" value="" id="exampleInputPassword1" name="password" placeholder="Enter password"><br><br>
    <span class="text-danger">{{ $errors->first('Password') }}</span>
 
   </div>
