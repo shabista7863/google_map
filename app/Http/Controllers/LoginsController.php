@@ -22,7 +22,7 @@ class LoginsController extends Controller
   
     LoginsController::validateLogin($request);
     $check=DB::table('user_registers')->where(['email'=>$email, 'password'=>$password])->first();
-     // dd( count($check));
+      dd( count($check));
     
     if(count((array)$check) > 0)
     {
