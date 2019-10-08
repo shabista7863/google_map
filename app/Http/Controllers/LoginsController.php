@@ -24,8 +24,7 @@ class LoginsController extends Controller
     $check=DB::table('user_registers')->where(['email'=>$email, 'password'=>$password])->first();
      // dd( count($check));
     
-    if(count((is_countable($check)?$check:[]) >0))
-    //(count($check) > 0)
+    if(count((array)$check) > 0)
     {
         $request->session()->put('id', $check->id);
         $request->session()->put('name', $check->name);
